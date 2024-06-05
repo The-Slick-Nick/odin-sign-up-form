@@ -11,22 +11,26 @@
 <body>
     <div class="master-wrapper">
         <div class="flavor-section">
+            <div class="banner">ODIN</div>
+            <span class="image-credit">Image credit to Kalen Emsley</span>
         </div>
-
         <div class="form-section">
             <p> This is not a real online service! You know you need something like
                 this in your life to help you realize your deepest dreams. Sign
-                up <i>now</i> to get started.
+                up <em>now</em> to get started.
 
-                You <i>know</i> you want to.
+                You <em>know</em> you want to.
+            </p>
             <form>
                 <legend>Let's do this!</legend>
                 <div class="input-block">
                     <label for="first-name">FIRST NAME</label>
                     <input type="text" id="first-name" name="first-name" required>
+                    <label class="invalid-help">Required</label>
 
-                    <label for="last-name">LAST NAME</label>
+                    <label for=" last-name">LAST NAME</label>
                     <input type="text" id="last-name" name="last-name" required>
+                    <label class="invalid-help">Required</label>
 
                     <label for="email">EMAIL</label>
                     <input type="email" id="email" name="email">
@@ -35,11 +39,14 @@
                     <input type="tel" id="phone-number" name="phone-number">
 
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
+                    <label class="invalid-help">Password is required</label>
 
                     <label for="password-confirm">CONFIRM PASSWORD</label>
                     <!-- Don't submit this one -->
-                    <input type="password" id="password-confirm">
+                    <input type="password" id="password-confirm" required>
+                    <label class="invalid-help">Must match password</label>
+
                 </div>
 
                 <div class="submit-block">

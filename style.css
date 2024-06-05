@@ -25,3 +25,21 @@ div {
 .form-section {
     flex: 2;
 }
+
+
+/* FORM STYLING */
+input:valid {
+    border: 1px solid green;
+}
+
+label.invalid-help {
+    display: none;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:invalid+label.invalid-help {
+    display: block;
+}
