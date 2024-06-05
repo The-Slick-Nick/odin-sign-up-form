@@ -24,29 +24,41 @@
             <form>
                 <legend>Let's do this!</legend>
                 <div class="input-block">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                    <label class="invalid-help">Required</label>
+                    <div class="input-cell">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <label class="invalid-help">Required</label>
+                    </div>
 
-                    <label for=" last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                    <label class="invalid-help">Required</label>
+                    <div class="input-cell">
+                        <label for=" last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <label class="invalid-help">Required</label>
+                    </div>
 
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                    <div class="input-cell">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
 
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number" pattern="\d{9}">
-                    <label class="invalid-help">(XXX) XXX-XXXX</label>
+                    <div class="input-cell">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="\d{9}">
+                        <label class="invalid-help">(XXX) XXX-XXXX</label>
+                    </div>
 
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>
-                    <label class="invalid-help">Password is required</label>
+                    <div class="input-cell">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required>
+                        <label class="invalid-help">Password is required</label>
+                    </div>
 
-                    <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <!-- Don't submit this one -->
-                    <input type="password" id="password-confirm" required>
-                    <label class="invalid-help">Must match password</label>
+                    <div class="input-cell">
+                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <!-- Don't submit this one -->
+                        <input type="password" id="password-confirm">
+                        <label class="invalid-help">Passwords must match</label>
+                    </div>
 
                     <script src="./pwd_validate.js"></script>
 

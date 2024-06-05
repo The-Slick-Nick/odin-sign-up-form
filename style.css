@@ -28,6 +28,21 @@ div {
 
 
 /* FORM STYLING */
+input {
+    width: 25ch;
+}
+
+.input-block {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.input-cell {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
 input:valid {
     border: 1px solid green;
 }
