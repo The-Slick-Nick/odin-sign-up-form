@@ -1,0 +1,19 @@
+/* debug */
+div {
+    outline: 1px dotted red;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.master-wrapper {
+    margin: 10vh 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 80vh;
+}
