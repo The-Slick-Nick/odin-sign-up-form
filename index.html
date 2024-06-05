@@ -36,7 +36,8 @@
                     <input type="email" id="email" name="email">
 
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number">
+                    <input type="tel" id="phone-number" name="phone-number" pattern="\d{9}">
+                    <label class="invalid-help">(XXX) XXX-XXXX</label>
 
                     <label for="password">PASSWORD</label>
                     <input type="password" id="password" name="password" required>
@@ -46,6 +47,8 @@
                     <!-- Don't submit this one -->
                     <input type="password" id="password-confirm" required>
                     <label class="invalid-help">Must match password</label>
+
+                    <script src="./pwd_validate.js"></script>
 
                 </div>
 
