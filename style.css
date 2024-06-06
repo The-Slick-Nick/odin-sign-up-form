@@ -16,10 +16,10 @@ body {
 
 
 .master-wrapper {
-    margin: 10vh 0px;
+    /* margin: 10vh 0px; */
     display: flex;
     flex-flow: row nowrap;
-    height: 80vh;
+    height: 100vh;
 }
 
 .flavor-section {
@@ -34,6 +34,7 @@ body {
 .flavor-section {
     position: relative;
     background-image: url("./assets/background-image.jpg");
+    background-attachment: scroll;
 }
 
 .image-credit {
@@ -47,9 +48,35 @@ body {
     text-align: center;
 }
 
+.banner {
+    height: clamp(5rem, 20%, 10rem);
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: rgba(100, 100, 100, 0.5);
+    /* position: absolute; */
+    position: sticky;
+    top: 10%;
+}
+
+.banner>img {
+    height: 100%;
+}
+
+.banner>span {
+    align-self: center;
+    font-size: 3rem;
+}
+
+
+
+
 
 /* FORM STYLING */
-.form-section {}
+.form-section {
+    /* position: absolute; */
+}
 
 input {
     width: 25ch;
