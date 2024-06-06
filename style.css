@@ -3,11 +3,15 @@ div {
     outline: 1px dotted red;
 }
 
-
+/* global */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
 }
 
 
@@ -28,13 +32,29 @@ div {
 
 
 /* FORM STYLING */
+.form-section {}
+
 input {
     width: 25ch;
+}
+
+legend {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .input-block {
     display: flex;
     flex-flow: row wrap;
+    min-width: 25ch;
+    max-width: 100ch;
+}
+
+.submit-block {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 50ch;
 }
 
 .input-cell {
