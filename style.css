@@ -1,6 +1,6 @@
 /* debug */
 div {
-    outline: 1px dotted red;
+    /* outline: 1px dotted red; */
 }
 
 /* global */
@@ -30,6 +30,23 @@ body {
     flex: 2;
 }
 
+/* FLAVOR STYLING */
+.flavor-section {
+    position: relative;
+    background-image: url("./assets/background-image.jpg");
+}
+
+.image-credit {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.image-credit {
+    display: block;
+    text-align: center;
+}
+
 
 /* FORM STYLING */
 .form-section {}
@@ -47,19 +64,21 @@ legend {
     display: flex;
     flex-flow: row wrap;
     min-width: 25ch;
-    max-width: 100ch;
+    max-width: 75ch;
 }
 
 .submit-block {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 50ch;
+    width: 25ch;
 }
 
 .input-cell {
     display: flex;
     flex-flow: column nowrap;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
 }
 
 
