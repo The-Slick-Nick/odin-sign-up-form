@@ -10,8 +10,15 @@ div {
     box-sizing: border-box;
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-size: 12px;
+
 }
 
 
@@ -19,22 +26,25 @@ body {
     /* margin: 10vh 0px; */
     display: flex;
     flex-flow: row nowrap;
-    height: 100vh;
+    height: 99vh;
 }
 
 .flavor-section {
-    flex: 1;
+    flex: 3;
 }
 
 .form-section {
-    flex: 2;
+    flex: 5;
 }
 
 /* FLAVOR STYLING */
 .flavor-section {
     position: relative;
     background-image: url("./assets/background-image.jpg");
-    background-attachment: scroll;
+
+
+
+    height: 100%;
 }
 
 .image-credit {
@@ -49,15 +59,14 @@ body {
 }
 
 .banner {
-    height: clamp(5rem, 20%, 10rem);
+    height: clamp(5rem, 15%, 10rem);
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     background-color: rgba(100, 100, 100, 0.5);
-    /* position: absolute; */
-    position: sticky;
-    top: 10%;
+    position: absolute;
+    top: 15%;
 }
 
 .banner>img {
@@ -74,9 +83,6 @@ body {
 
 
 /* FORM STYLING */
-.form-section {
-    /* position: absolute; */
-}
 
 input {
     width: 25ch;
