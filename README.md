@@ -1,2 +1,2 @@
 ## Credits
-Background image credit to [Kalen Emsley](https://unsplash.com/@kalenemsley)
+Background image credit to [Abhijeet Majhi](https://unsplash.com/@avgt27199)
