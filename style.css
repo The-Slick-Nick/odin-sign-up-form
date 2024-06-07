@@ -19,7 +19,10 @@ html {
 body {
     font-size: 12px;
 
-    background-image: url("./assets/background-image.jpg");
+    /* background-image: url("./assets/background-image.jpg"); */
+    background-image: url("./assets/mushrooms_abhijeet_majhi.jpg");
+    /* background-position-x: -50%; */
+    background-size: cover;
     height: 200vh;
 }
 
