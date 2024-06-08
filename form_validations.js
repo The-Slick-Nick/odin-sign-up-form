@@ -6,6 +6,7 @@
 
 const pwdInput = document.querySelector("#password");
 const pwdConfirm = document.querySelector("#password-confirm");
+const pwdInvalidLabel = document.querySelector(".pwd-help");
 const submitButton = document.querySelector(".submit-block>button");
 const allInputs = document.querySelectorAll("input");
 
@@ -23,20 +24,31 @@ submitButton.addEventListener("click", (event) => {
     });
 });
 
-
+/* I'm using class "invalid-style" as a way to trigger invalid-like styling
+ * without other invalid element related logic */
 let verifyValuesEqual = function(input1, input2) {
     if (input1.value !== input2.value) {
-        input1.classList.add("invalid");
-        input2.classList.add("invalid");
+        input1.classList.add("invalid-style");
+        input2.classList.add("invalid-style");
+        return false;
     }
     else {
-        input1.classList.remove("invalid");
-        input2.classList.remove("invalid");
+        input1.classList.remove("invalid-style");
+        input2.classList.remove("invalid-style");
+        return true;
     }
 }
 
-pwdInput.addEventListener("input", () => { verifyValuesEqual(pwdInput, pwdConfirm); });
-pwdConfirm.addEventListener("input", () => { verifyValuesEqual(pwdInput, pwdConfirm); });
+let validatePasswords = function() {
+    if (verifyValuesEqual(pwdInput, pwdConfirm)) {
+        pwdInvalidLabel.classList.add("element-hidden");
+    }
+    else {
+        pwdInvalidLabel.classList.remove("element-hidden");
+    }
+}
 
-verifyValuesEqual(pwdInput, pwdConfirm);
+pwdInput.addEventListener("input", validatePasswords);
+pwdConfirm.addEventListener("input", validatePasswords);
+validatePasswords();
 
