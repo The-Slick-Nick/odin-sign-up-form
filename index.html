@@ -29,36 +29,37 @@
                     </p>
                     <p> You <em>know</em> you want to.</p>
 
-                    <legend>Let's do this!</legend>
                 </div>
                 <div class="input-block">
+                    <legend>Let's do this!</legend>
                     <div class="input-cell">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <label for="first-name">FIRST NAME*</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
                         <label class="invalid-help">Required</label>
                     </div>
 
                     <div class="input-cell">
-                        <label for=" last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <label for=" last-name">LAST NAME*</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
                         <label class="invalid-help">Required</label>
                     </div>
 
                     <div class="input-cell">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" placeholder="abc@123.com">
                     </div>
 
                     <div class="input-cell">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" id="phone-number" name="phone-number" pattern="\d{9}">
+                        <input type="tel" id="phone-number" name="phone-number" pattern="\d{9}"
+                            placeholder="(555) 555-5555">
                         <label class="invalid-help">(XXX) XXX-XXXX</label>
                     </div>
 
                     <div class="input-cell">
-                        <label for="password">PASSWORD</label>
+                        <label for="password">PASSWORD*</label>
                         <input type="password" id="password" name="password" required>
-                        <label class="invalid-help">Password is required</label>
+                        <label class="invalid-help">Required</label>
                     </div>
 
                     <div class="input-cell">
@@ -68,7 +69,6 @@
                         <label class="invalid-help">Passwords must match</label>
                     </div>
 
-                    <script src="./pwd_validate.js"></script>
 
                 </div>
 
@@ -78,9 +78,8 @@
                     <p>Already have an account? <a href="./">Log in</a>
 
                 </div>
-
-
             </form>
+            <script src="./form_validations.js"></script>
 
         </div>
     </div>
