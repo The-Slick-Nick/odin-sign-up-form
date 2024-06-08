@@ -4,9 +4,6 @@
  */
 
 
-const pwdInput = document.querySelector("#password");
-const pwdConfirm = document.querySelector("#password-confirm");
-const pwdInvalidLabel = document.querySelector(".pwd-help");
 
 const submitButton = document.querySelector(".submit-block>button");
 const allInputs = document.querySelectorAll("input");
@@ -39,6 +36,10 @@ let verifyValuesEqual = function(input1, input2) {
         return true;
     }
 }
+
+const pwdInput = document.querySelector("#password");
+const pwdConfirm = document.querySelector("#password-confirm");
+const pwdInvalidLabel = document.querySelector(".pwd-help");
 
 let validatePasswords = function() {
     if (verifyValuesEqual(pwdInput, pwdConfirm)) {
