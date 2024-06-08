@@ -54,6 +54,12 @@ pwdInput.addEventListener("input", validatePasswords);
 pwdConfirm.addEventListener("input", validatePasswords);
 validatePasswords();
 
+submitButton.addEventListener("click", (event) => {
+    if (!verifyValuesEqual(pwdInput, pwdConfirm)) {
+        event.preventDefault();
+    }
+});
+
 
 /* Aid the user in inputting the correct phone number format */
 const telInputElem = document.querySelector("#phone-number");
@@ -77,4 +83,6 @@ let formatValueAsTelephone = function(element) {
 }
 
 telInputElem.addEventListener("input", (event) => { formatValueAsTelephone(event.target); });
+
+
 
