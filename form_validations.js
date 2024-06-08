@@ -7,6 +7,7 @@
 const pwdInput = document.querySelector("#password");
 const pwdConfirm = document.querySelector("#password-confirm");
 const pwdInvalidLabel = document.querySelector(".pwd-help");
+
 const submitButton = document.querySelector(".submit-block>button");
 const allInputs = document.querySelectorAll("input");
 
@@ -51,4 +52,28 @@ let validatePasswords = function() {
 pwdInput.addEventListener("input", validatePasswords);
 pwdConfirm.addEventListener("input", validatePasswords);
 validatePasswords();
+
+
+/* Aid the user in inputting the correct phone number format */
+const telInputElem = document.querySelector("#phone-number");
+const nonDigitMatcher = new RegExp("\\D", "g");
+
+let formatValueAsTelephone = function(element) {
+    let onlyNums = element.value.replace(nonDigitMatcher, "");
+    element.value = ""
+
+    if (onlyNums.length > 0) {
+        element.value = "(" + onlyNums.substring(0, 3);
+    }
+
+    if (onlyNums.length > 3) {
+        element.value += ") " + onlyNums.substring(3, 6);
+    }
+
+    if (onlyNums.length > 6) {
+        element.value += "-" + onlyNums.substring(6, 10);
+    }
+}
+
+telInputElem.addEventListener("input", (event) => { formatValueAsTelephone(event.target); });
 
